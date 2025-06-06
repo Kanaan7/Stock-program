@@ -36,15 +36,15 @@ while True:
         break
     else:
         print("\nItem Manufacturing cost must be a real number greater than 0\n")
-# verify Stcock level
+# verify Stock level
 while True:
     stock=-1
     try:
-        stock = int(input(" insert Item Stcock level value: "))
+        stock = int(input(" insert Item Stock level value: "))
     except: pass
     if stock > 0:
         break
-    else: print("\nItem Stcock level must be an integer greater than 0\n")
+    else: print("\nItem Stock level must be an integer greater than 0\n")
 # verify monthly units manufactured
 while True:
     monthlymanufactured=-1
@@ -60,7 +60,7 @@ print("Item code: " + str(code))
 print("Item name: " + str(name))
 print("Item price: $" + str(price))
 print("Item Manufacturing cost: $" + str(manufacturecost))
-print("Item Stcock level: " + str(stock))
+print("Item Stock level: " + str(stock))
 print("Estimated monthly units manufactured: " + str(monthlymanufactured))
 # instantiates object
 Product = logic.Item(code, name, price, manufacturecost, stock, monthlymanufactured)
